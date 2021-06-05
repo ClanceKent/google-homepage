@@ -1,20 +1,19 @@
+
 /*
-fetch('https://extreme-ip-lookup.com/json/')
-.then( res => res.json())
-.then(response => {
-    console.log("Country: ", response.country);
-    document.getElementById("country").innerHTML = response.country;
- })
- .catch((data, status) => {
-    console.log('Request failed');
- })
+Script that guesses the user's country based on timezone supplied by browser
+Author - Clance Kent
 */
 
- function getIP(json) {
-   if (json.country && json.city) {
-    var div = document.getElementById('country');
-    div.innerHTML=json.country;
-   }
-  }
 
-<script src="https://extreme-ip-lookup.com/json/?callback=getIP" async defer></script>
+
+var tmzn = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+document.getElementById("country").innerHTML = getCountry(tmzn);
+
+function getCountry(timezone){
+    if (timezone.includes('/'))
+    {
+        timezone = timezone.substring(0, timezone.indexOf('/')); 
+    }
+    return timezone; 
+}
