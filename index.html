@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Google</title>
+    <link rel="shortcut icon" type="image/svg" href="app-icon.svg"/>
+    <meta name="description" content="Google">
+    <meta name="author" content="Clance Kent">
+
+    <link rel="stylesheet" href="main.css">
+    
+    <script src="get-country.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="#">
+            About
+        </a>
+        <a href="#">
+            Store
+        </a>
+        <div class="apps">
+            <a href="#">
+                Gmail
+            </a>
+            <a href="#">
+                Images
+            </a>
+            <a class="apps-overflow" aria-label="Google apps" href="#" role="button" tabindex="0"></a>
+            <a class="account" aria-label="Google Account" href="#" aria-expanded="false" role="button" tabindex="0"></a>
+
+        </div>
+    </div>
+    <div class="logo">
+        <img class="logo-img" src="logo-2x.png" alt="Google" height="92" width="272"  srcset="logo-1x 1x, logo-2x.png 2x">
+    </div>
+
+    <div class="search-bar">
+        <form action="/search" method="GET">
+            <input class="search-input" type="text" name="query" maxlength="2048" role="combobox" spellcheck="false" autocomplete="off" title="Search" aria-label="Search">
+            <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnSearch" type="submit">
+            <input class="gNO89b" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnLucky" type="submit">
+        
+        </form>
+    </div>
+    <div class="footer">
+        <div id="country">
+        </div>
+    </div>
+
+</body>
+</html>
