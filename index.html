@@ -14,40 +14,61 @@
 
 <body>
     <div class="header">
-        <a href="#">
-            About
-        </a>
-        <a href="#">
-            Store
-        </a>
+        <div class="promo">
+            <a class="about" href="#">About</a>
+            <a class="store" href="#">Store</a>
+        </div>
         <div class="apps">
-            <a href="#">
-                Gmail
+            <a class="gmail" href="#">Gmail</a>
+            <a class="images" href="#">Images</a>
+            <a class="apps-overflow" aria-label="Google apps" href="#" role="button" tabindex="0">
+                <img class="apps-icon" src="apps-icon.svg" height="32" width="32"/>
             </a>
-            <a href="#">
-                Images
+            <a class="account" aria-label="Google Account" href="https://github.com/clancekent" aria-expanded="false" role="button" tabindex="0">
+                <img class="account-img" src="https://avatars.githubusercontent.com/u/74948774?s=64"  height="32" width="32"/>
             </a>
-            <a class="apps-overflow" aria-label="Google apps" href="#" role="button" tabindex="0"></a>
-            <a class="account" aria-label="Google Account" href="#" aria-expanded="false" role="button" tabindex="0"></a>
-
         </div>
     </div>
-    <div class="logo">
-        <img class="logo-img" src="logo-2x.png" alt="Google" height="92" width="272"  srcset="logo-1x 1x, logo-2x.png 2x">
-    </div>
+    <div class="content">
+        <div class="logo">
+            <img class="logo-img" src="logo-2x.png" alt="Google" height="92" width="272"  srcset="logo-1x 1x, logo-2x.png 2x">
+        </div>
 
-    <div class="search-bar">
-        <form action="/search" method="GET">
-            <input class="search-input" type="text" name="query" maxlength="2048" role="combobox" spellcheck="false" autocomplete="off" title="Search" aria-label="Search">
-            <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnSearch" type="submit">
-            <input class="gNO89b" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnLucky" type="submit">
-        
-        </form>
+        <div class="search">
+            <form action="/search" method="GET">
+                <div class="search-bar">
+                    
+                    <img class="search-icon" src="search-icon.svg" height="21" width="21"/>
+                    <input class="search-input" type="text" name="query" maxlength="2048" autofocus role="combobox" autocomplete="off" focus-index="0" title="Search" aria-label="Search">
+                    <img class="voice-icon" src="voice-icon.svg" height="24" width="24"/>
+                </div>
+                <center>
+                    <input class="search-btn" value="Google Search" aria-label="Google Search" name="btnSearch" type="submit">
+                    <input class="search-btn" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnLucky" type="submit">
+                </center>
+            </form>
+        </div>
     </div>
     <div class="footer">
-        <div id="country">
+        <div class="footer-top">
+            <div id="country">
+                <!-- populated by get-country.js-->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-business">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="footer-user">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
         </div>
     </div>
+    
     <script src="get-country.js"></script>
 </body>
 </html>
