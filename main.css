@@ -22,6 +22,10 @@ a:hover {
     display: none;
 }
 
+.mobile {
+    display: none;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -259,15 +263,10 @@ a:hover {
     }
 }
 
-.footer-business {
+.footer-bottom-group {
     display: flex;
     align-items: center;
     white-space: nowrap;
-}
-
-.footer-user {
-    display: flex;
-    align-items: center;
 }
 
 .footer-bottom a {
@@ -293,11 +292,19 @@ html[data-useragent*='Chrome'] body {
         display: block;
     }
 
+    .mobile {
+        display: block;
+    }
+
     .desktop {
         display: none;
     }
 
     .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-shrink: 0;
         padding: 0;
     }
 
@@ -310,7 +317,7 @@ html[data-useragent*='Chrome'] body {
     }
 
     .hamburger-menu-icon {
-        padding-top: 12px;
+        padding-top: 13px;
     }
 
     .search-categories > a {
@@ -360,6 +367,7 @@ html[data-useragent*='Chrome'] body {
 
     .search-input {
         margin-top: 2px;
+        
     }
 
     .search-icon {
@@ -400,15 +408,16 @@ html[data-useragent*='Chrome'] body {
     .footer-bottom {
         border-top: 1px solid #dadce0;
         min-width: 260px;
-        padding: 10px 27px;
+        padding: 10px 0px;
         font-size: 13px;
+        
     }
 
-    .footer-business {
+    .footer-bottom-group {
         height: 35px;
     }
 
-    .footer-user {
-        height: 35px;
+    .footer-bottom a {
+        margin: 9px 13.5px 9px 13.5px;
     }
   }
