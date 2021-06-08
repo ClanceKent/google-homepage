@@ -36,9 +36,12 @@ a:hover {
     font-size: 14px;
 }
 
+ .mobile-header {
+    padding: 0;
+}
+
 .header a {
     color: #222;
-    
 }
 
 .promo {
@@ -140,8 +143,9 @@ a:hover {
     }
 }
 
-.logo-img {
+.logo-picture {
     margin-top: auto;
+    height: 92px;
     object-position: center bottom;
 }
 
@@ -308,6 +312,15 @@ html[data-useragent*='Chrome'] body {
         flex-direction: row;
         align-items: center;
         flex-shrink: 0;
+        padding: 0;
+    }
+
+    .mobile-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-shrink: 0;
+        padding: 0;
         padding: 0;
     }
 
