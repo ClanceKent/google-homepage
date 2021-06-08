@@ -74,13 +74,16 @@ a:hover {
 }
 
 .apps-overflow {
-    width: 32px;
-    height: 32px;
-    padding: 4px;
+    width: 40px;
+    height: 40px;
     margin-right:8px;
     vertical-align: middle;
     border-radius: 50%;
     flex-shrink: 1;
+}
+
+.apps-icon {
+    margin: 4px;
 }
 
 .apps-overflow:hover {
@@ -93,9 +96,8 @@ a:hover {
 }
 
 .account {
-    width: 32px;
-    height: 32px;
-    padding: 4px;
+    width: 40px;
+    height: 40px;
     margin-right:8px;
     vertical-align: middle;
     border-radius: 50%;
@@ -113,6 +115,7 @@ a:hover {
 
 .account-img {
     border-radius: 50%;
+    margin: 4px;
 }
 
 .account-img:hover {
@@ -337,6 +340,17 @@ html[data-useragent*='Chrome'] body {
         border-bottom: 2px solid #4285f4;
     }
 
+    .account {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+      
+    .account-img {
+        margin: 4px;
+        border-radius: 50%;
+    }
+    
     .content {
         padding: 0;
     }
@@ -410,7 +424,6 @@ html[data-useragent*='Chrome'] body {
         min-width: 260px;
         padding: 10px 0px;
         font-size: 13px;
-        
     }
 
     .footer-bottom-group {

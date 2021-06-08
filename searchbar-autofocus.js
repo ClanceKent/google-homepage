@@ -1,7 +1,7 @@
 window.onload = function() {
     if (screen.width > 600)
     {
-        document.getElementById("search-input").focus();
+        document.getElementsByClassName("search-input")[0].focus();
     }
 };
 
