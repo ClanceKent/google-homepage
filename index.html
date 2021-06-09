@@ -1,93 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
-    <link rel="shortcut icon" type="image/svg" href="images/app-icon.svg"/>
-    <meta name="description" content="Google">
-    <meta name="author" content="Clance Kent">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="shortcut icon" type="image/svg" href="images/app-icon.svg" />
+    <meta name="description" content="Google" />
+    <meta name="author" content="Clance Kent" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <div class="mobile mobile-header">
-            <a class="hamburger-menu" aria-label="Menu" href="#" role="button" tabindex="0">
-                <img class="hamburger-menu-icon" src="images/hamburger-menu-icon.svg" height="24" width="24"/>
-            </a>
-            <div class="mobile search-categories">
-                <a class="category-all active" href="#">ALL</a>
-                <a class="category-images" href="#">IMAGES</a>
-            </div>
+      <div class="mobile mobile-header">
+        <a
+          class="hamburger-menu"
+          aria-label="Menu"
+          href="#"
+          role="button"
+          tabindex="0"
+        >
+          <img
+            class="hamburger-menu-icon"
+            src="images/hamburger-menu-icon.svg"
+            height="24"
+            width="24"
+          />
+        </a>
+        <div class="mobile search-categories">
+          <a class="category-all active" href="#">ALL</a>
+          <a class="category-images" href="#">IMAGES</a>
         </div>
-        <div class="desktop promo">
-            <a class="about" href="#">About</a>
-            <a class="store" href="#">Store</a>
-        </div>
-        
-        <div class="apps">
-            <a class="desktop gmail" href="#">Gmail</a>
-            <a class="desktop images" href="#">Images</a>
-            <a class="apps-overflow" href="#" role="button" tabindex="0">
-                <img class="apps-icon" src="images/apps-icon.svg" height="32" width="32"/>
-            </a>
-            <a class="account" aria-label="Google Account" href="https://github.com/clancekent" role="button" tabindex="0">
-                <img class="account-img" src="https://avatars.githubusercontent.com/u/74948774?s=64"  height="32" width="32"/>
-            </a>
-        </div>
+      </div>
+      <div class="desktop promo">
+        <a class="about" href="#">About</a>
+        <a class="store" href="#">Store</a>
+      </div>
+
+      <div class="apps">
+        <a class="desktop gmail" href="#">Gmail</a>
+        <a class="desktop images" href="#">Images</a>
+        <a class="apps-overflow" href="#" role="button" tabindex="0">
+          <img
+            class="apps-icon"
+            src="images/apps-icon.svg"
+            height="32"
+            width="32"
+          />
+        </a>
+        <a
+          class="account"
+          aria-label="Google Account"
+          href="https://github.com/clancekent"
+          role="button"
+          tabindex="0"
+        >
+          <img
+            class="account-img"
+            src="https://avatars.githubusercontent.com/u/74948774?s=64"
+            height="32"
+            width="32"
+          />
+        </a>
+      </div>
     </div>
     <div class="content">
-        <div class="logo">
-            <picture class="logo-picture">
-                <source srcset="images/logo-mobile-2x.png" media="(max-device-width: 600px)">
-                <img class="logo-img" src="images/logo-2x.png" alt="Google" height="92" width="272"  srcset="images/logo-1x.png 1x, images/logo-2x.png 2x">
-            </picture>
+      <div class="logo">
+        <picture class="logo-picture">
+          <source
+            srcset="images/logo-mobile-2x.png"
+            media="(max-device-width: 600px)"
+          />
+          <img
+            class="logo-img"
+            src="images/logo-2x.png"
+            alt="Google"
+            height="92"
+            width="272"
+            srcset="images/logo-1x.png 1x, images/logo-2x.png 2x"
+          />
+        </picture>
+      </div>
+      <div class="search">
+        <div class="search-bar">
+          <img
+            class="search-icon"
+            src="images/search-icon.svg"
+            height="20"
+            width="20"
+          />
+          <input
+            class="search-input"
+            type="text"
+            name="query"
+            maxlength="2048"
+            role="combobox"
+            autocomplete="off"
+            focus-index="-1"
+            title="Search"
+            aria-label="Search"
+          />
+          <picture>
+            <source
+              srcset="images/voice-icon-mobile.svg"
+              media="(max-device-width: 600px)"
+            />
+            <img
+              class="voice-icon"
+              src="images/voice-icon.svg"
+              height="24"
+              width="24"
+            />
+          </picture>
         </div>
-        <div class="search">
-                <div class="search-bar">
-                    <img class="search-icon" src="images/search-icon.svg" height="20" width="20"/>
-                    <input class="search-input" type="text" name="query" maxlength="2048" role="combobox" autocomplete="off" focus-index="-1" title="Search" aria-label="Search">
-                    <picture>
-                        <source srcset="images/voice-icon-mobile.svg" media="(max-device-width: 600px)">
-                        <img class="voice-icon" src="images/voice-icon.svg" height="24" width="24"/>
-                    </picture>
-                </div>
-                <center>
-                    <input class="search-btn" value="Google Search" aria-label="Google Search" name="btnSearch" type="button">
-                    <input class="search-btn" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnLucky" type="button">
-                </center>
-        </div>
-        <div class="whitespace-bottom"></div>
+        <center>
+          <input
+            class="search-btn"
+            value="Google Search"
+            aria-label="Google Search"
+            name="btnSearch"
+            type="button"
+          />
+          <input
+            class="search-btn"
+            value="I'm Feeling Lucky"
+            aria-label="I'm Feeling Lucky"
+            name="btnLucky"
+            type="button"
+          />
+        </center>
+      </div>
+      <div class="whitespace-bottom"></div>
     </div>
     <div class="footer">
-        <div class="footer-top">
-            <div id="country">
-                <!-- populated by get-country.js-->
-            </div>
+      <div class="footer-top">
+        <div class="countr" id="country">
+          <!-- populated by get-country.js-->
         </div>
-        <div class="footer-bottom">
-            <div class="footer-bottom-group">
-                <a class="desktop" href="#">Advertising</a>
-                <a class="desktop" href="#">Business</a>
-                <a class="desktop" href="#">How Search works</a>
-                <a class="mobile" href="#">Settings</a>
-                <a class="mobile" href="#">Privacy</a>
-                <a class="mobile" href="#">Terms</a>
-            </div>
-            <div class="footer-bottom-group">
-                <a class="desktop" href="#">Privacy</a>
-                <a class="desktop" href="#">Terms</a>
-                <a class="desktop" href="#">Settings</a>
-                <a class="mobile" href="#">Advertising</a>
-                <a class="mobile" href="#">Business</a>
-                <a class="mobile" href="#">About</a>
-            </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-group">
+          <a class="desktop" href="#">Advertising</a>
+          <a class="desktop" href="#">Business</a>
+          <a class="desktop" href="#">How Search works</a>
+          <a class="mobile" href="#">Settings</a>
+          <a class="mobile" href="#">Privacy</a>
+          <a class="mobile" href="#">Terms</a>
         </div>
+        <div class="footer-bottom-group">
+          <a class="desktop" href="#">Privacy</a>
+          <a class="desktop" href="#">Terms</a>
+          <a class="desktop" href="#">Settings</a>
+          <a class="mobile" href="#">Advertising</a>
+          <a class="mobile" href="#">Business</a>
+          <a class="mobile" href="#">About</a>
+        </div>
+      </div>
     </div>
     <script src="get-country.js"></script>
     <script src="searchbar-autofocus.js"></script>
-</body>
-
+  </body>
 </html>
